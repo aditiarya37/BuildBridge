@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { login, signUp, googleSignIn } from "../firebase/auth"; // Updated import
 import "./AuthModal.css";
+import googleLogo from "/src/assets/continue-with-google.webp";
 import logo from "/src/assets/logo.png";
 
 function AuthModal() {
@@ -10,16 +12,36 @@ function AuthModal() {
     const [userType, setUserType] = useState("user"); // Default selection is User
     const navigate = useNavigate();
 
-    const handleAuth = () => {
-        // Simulating authentication
-        const userData = { email, userType };
-        localStorage.setItem("user", JSON.stringify(userData)); // Save user details in localStorage
+    const handleAuth = async () => {
+        try {
+            let user;
+            if (authType === "login") {
+                user = await login(email, password);
+            } else {
+                user = await signUp(email, password);
+            }
 
-        // Redirecting based on user type
-        if (userType === "user") {
-            navigate("/user-dashboard");
-        } else {
-            navigate("/constructor-dashboard");
+            // Save user details in localStorage
+            localStorage.setItem("user", JSON.stringify({ email: user.email, userType }));
+
+            // Redirect based on user type
+            if (userType === "user") {
+                navigate("/user-dashboard");
+            } else {
+                navigate("/constructor-dashboard");
+            }
+        } catch (error) {
+            alert(error.message); // Display error message
+        }
+    };
+
+    const handleGoogleSignIn = async () => {
+        try {
+            const user = await googleSignIn();
+            localStorage.setItem("user", JSON.stringify({ email: user.email, userType: "user" }));
+            navigate("/user-dashboard"); // Redirect after successful login
+        } catch (error) {
+            alert(error.message);
         }
     };
 
@@ -65,6 +87,13 @@ function AuthModal() {
                     <button className="auth-btn" onClick={handleAuth}>
                         {authType === "login" ? "Login" : "Sign Up"}
                     </button>
+
+                    <span>OR</span>
+
+                    {/* Google Sign-In Button */}
+                    <a href="#" onClick={handleGoogleSignIn} className="google-auth-link">
+                        <img className="google-auth-img" src={googleLogo} alt="Continue With Google" />
+                    </a>
                 </div>
 
                 {/* Right Side - Illustration */}

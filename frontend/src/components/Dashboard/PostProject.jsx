@@ -56,7 +56,7 @@ const PostProject = () => {
                     name="requirements" 
                     value={formData.requirements} 
                     onChange={handleChange} 
-                    placeholder="Describe your project requirements" 
+                    placeholder="Describe your project requirements (such as sq guz)" 
                     required 
                 ></textarea>
 

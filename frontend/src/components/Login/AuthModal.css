@@ -111,3 +111,36 @@ input {
   /* max-width: 400px; */
   border-radius: 10px;
 }
+
+.google-auth-btn {
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.google-btn {
+  margin-top: 20px;
+}
+
+.google-auth-img {
+  width: 400px;
+}
+
+span {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+}

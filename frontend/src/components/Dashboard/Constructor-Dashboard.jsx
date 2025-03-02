@@ -36,6 +36,7 @@ const ConstructorDashboard = () => {
             <div className="dashboard-content">
                 {/* Left Side - Personal Information */}
                 <div className="personal-info">
+                    <h1>Sameer Gupta</h1>
                     <h2>{userData.email.split("@")[0]}</h2> 
 
                     {/* Star Rating */}

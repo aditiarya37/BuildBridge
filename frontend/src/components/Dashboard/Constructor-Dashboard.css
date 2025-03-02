@@ -1,0 +1,135 @@
+.dashboard-container {
+    width: 80%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.cover-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.profile-pic {
+    position: absolute;
+    bottom: -50px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dashboard-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.personal-info {
+    width: 45%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.personal-info h2 {
+    margin-bottom: 5px;
+}
+
+.star-rating {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.star-rating span {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #333;
+}
+
+.personal-info h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.personal-info p {
+    margin: 8px 0;
+}
+
+.projects-section {
+    width: 50%;
+    background: lightgray;
+    padding: 20px;
+    margin-right: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects-box-con {
+    margin-top: 10px;
+    background: lightgray;
+    height: 100px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.projects-box-text {
+    font-size: 14px;
+    color: #666;
+}
+
+.add-project-btn {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.plus-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Reviews Section */
+.personal-info p strong {
+    color: #222;
+}
+
+/* Testimonial Section */
+.testimonial-box {
+    background: #eaeaea;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.testimonial-profile {
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-box p {
+    font-size: 14px;
+    color: #333;
+}
+
+.testimonial-box strong {
+    font-weight: bold;
+}

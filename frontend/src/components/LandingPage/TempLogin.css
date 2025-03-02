@@ -1,0 +1,77 @@
+/* Temp Login */
+.temp-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+    padding: 40px;
+    /* background-color: #f8f9fa; */
+  }
+  
+  .left-section {
+    margin-left: 75px;
+    max-width: 50%;
+  }
+  
+  .left-section h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: black; 
+    margin-bottom: 20px;
+  }
+  
+  .left-section p {
+    font-size: 1rem;
+    margin: 30px 0px;
+    color: #777;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .post-project-btn,
+  .join-contractor-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .post-project-btn {
+    background-color: #000;
+    color: white;
+  }
+  
+  .post-project-btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+  
+  .join-contractor-btn {
+    background-color: white;
+    color: #333;
+    border: 1px solid #333;
+  }
+  
+  .join-contractor-btn:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .right-section {
+    max-width: 50%;
+    text-align: center;
+  }
+  
+  .right-section img {
+    width: 100%;
+    border-radius: 5px;
+    margin-right: 50px;
+    margin-bottom: -75px;
+    height: auto;
+    object-fit: cover;
+  }

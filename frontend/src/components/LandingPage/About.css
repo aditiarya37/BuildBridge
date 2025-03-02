@@ -1,0 +1,39 @@
+/* About */
+.about {
+    padding: 40px 20px;
+    /* background-color: #fffaf0; */
+  }
+  
+  .about-title {
+    font-size: 2rem;
+    text-align: center;
+    color: black; 
+    margin-bottom: 20px;
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .about-card {
+    background-color: white; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-card h3 {
+    font-size: 1.2rem;
+    color: black; 
+    margin-bottom: 10px;
+  }
+  
+  .about-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #333;
+  }

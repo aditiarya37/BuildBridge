@@ -1,0 +1,102 @@
+/* Container */
+.dashboard-container {
+    width: 101%;
+    left: 0;
+    border: 2px solid #d3d3d3;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 60px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    height: 40px;
+}
+
+/* Cover Image */
+.cover-image {
+    /* background-color: #6cb4e4; */
+    height: 120px;
+    position: relative;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 157px;
+    height: 157px;
+    background-color: lightgray;
+    border-radius: 16px;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.profile-pic img {
+    border-radius: 18px;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    display: flex;
+    padding: 20px;
+    position: relative;
+    height: 50vh;
+    margin-top: 100px;
+}
+
+/* Personal Information */
+.personal-info {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.personal-info h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.personal-info h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.personal-info p {
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+/* Projects Section */
+.projects-section {
+    flex: 1;
+    padding-left: 50px;
+    border-left: 2px solid black;
+}
+
+.projects-section h3 {
+    font-size: 16px;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.projects-box {
+    width: 90%;
+    height: 300px;
+    background-color: lightgray;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.projects-box-text {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plus-icon {
+    width: 30px;
+}

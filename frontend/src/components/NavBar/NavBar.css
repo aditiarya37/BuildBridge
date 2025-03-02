@@ -1,0 +1,98 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 96%;
+  background: transparent;
+  transition: background-color 0.3s ease-in-out, padding 0.3s;
+  z-index: 1000;
+}
+
+/* Navbar when scrolled */
+.navbar.transparent {
+  background: transparent;
+}
+
+/* Black when scrolled */
+.navbar.scrolled {
+  background: black;
+  padding: 15px 40px;
+}
+
+/* Always black when user is authenticated */
+.navbar.authenticated {
+  background: black !important;
+}
+
+/* Logo */
+.logo a {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  opacity: 0.7;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: background-color 0.3s, padding 0.3s;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.nav-item:hover {
+  background-color: #ff6600;
+}
+
+/* Login/Signup Button */
+.login-btn {
+  background-color: #ff6600;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #e65c00;
+}
+
+.login-btn::after {
+  content: '→';
+  margin-left: 10px;
+}
+
+/* Logout Button */
+.logout-btn {
+  background-color: #ff6600;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: red;
+}
